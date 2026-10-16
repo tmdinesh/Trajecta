@@ -14,6 +14,14 @@
     9
   ],
   "depot_city": "Coimbatore",
+  "enable_infrastructure": true,
+  "enable_pack3d": true,
+  "enable_traffic": true,
+  "enable_stochastic_service_time": true,
+  "enable_penalty_risk_split": true,
+  "enable_dbscan": false,
+  "dbscan_eps_km": 2.0,
+  "dbscan_min_samples": 2,
   "synthetic_city_radius_km": 22.0,
   "cost_rate_scale": 1.16,
   "due_offset_hours": [
@@ -126,6 +134,7 @@
     8.0
   ],
   "penalty_deadline_h": 22.0,
+  "t_base": 8.0,
   "service_base_min": 8.0,
   "service_min_per_kg": 0.05,
   "service_min_per_m3": 5.0,
@@ -146,20 +155,27 @@
     "midday": 1.05,
     "night": 0.9
   },
+  "gamma": 1.0,
+  "delta": 1.0,
   "weather_factor": 1.0,
   "lane_factor": 1.0,
-  "assumed_route_groups": 4,
-  "ortools_seconds": 2,
-  "metaheuristic_iterations": 10,
-  "target_fit": {
-    "candidate_cost_rs": 4200,
-    "baseline_cost_rs": 6100,
-    "baseline_penalty_rs": 680,
-    "candidate_penalty_rs": 0,
-    "candidate_ontime_pct": 95,
-    "baseline_ontime_pct": 62,
-    "candidate_distance_km": 467
+  "skill_distribution": {
+    "two_wheeler": {
+      "count": 2,
+      "share": 0.2857142857142857
+    },
+    "four_wheeler": {
+      "count": 3,
+      "share": 0.42857142857142855
+    },
+    "truck": {
+      "count": 2,
+      "share": 0.2857142857142857
+    }
   },
+  "assumed_route_groups": 4,
+  "ortools_seconds": 10,
+  "metaheuristic_iterations": 10,
   "fleet": [
     {
       "name": "2W-Petrol",

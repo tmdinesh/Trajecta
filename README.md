@@ -1,16 +1,29 @@
 # Trajecta
 
-Routing optimization code, scenario datasets, benchmark inputs, and result artifacts.
+A framework for vehicle routing optimization, benchmark evaluation, and output visualization.
 
-The synthetic scenario data uses assumed and sensitivity-calibrated parameters. Solomon benchmark runs use published reference route warm starts; Cordeau runs use a nearest-depot decomposition. See `results/summary.json` and `results/benchmark_algorithm_summary.csv` for run outputs and limitations.
+## Run Experiment
 
-## Setup
+Run the automated pipeline to install dependencies, execute experiments, and generate figures/tables:
 
 ```powershell
-python -m pip install -r requirements.txt
-python recreate.py
-python download_benchmarks.py
-python run_benchmarks.py
+powershell -ExecutionPolicy Bypass -File .\run_pipeline.ps1
 ```
 
-Datasets are in `datasets/`; generated results are in `results/`.
+## Artifacts
+
+Datasets: `experiment/datasets/`
+
+Assumptions: `experiment/assumptions.json`
+
+Outputs: `experiment/results/`
+
+Figures: `experiment/results/figures/` 
+
+Tables: `experiment/results/tables/`
+
+## Supporting Documents
+
+Research Paper: `Trajecta.pdf` & `Trajecta.docx`
+
+Supplementary Documents: `supplementary_documents/`

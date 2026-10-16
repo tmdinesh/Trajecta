@@ -1,0 +1,3 @@
+Solomon instances c101, r101, rc101: SINTEF Solomon 100-customer benchmark; files mirrored by https://github.com/ashishshukla77/solomon-vrptw-optimization
+Cordeau MDVRP p01, p02: Cordeau benchmark files mirrored by https://github.com/fboliveira/MDVRP-Instances; see repository LICENSE and DESCRIPTION.md.
+The raw instance files are kept in raw/ and normalized customer/depot rows in benchmark_instances.csv.
